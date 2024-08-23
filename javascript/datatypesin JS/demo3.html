@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="cake"></h1>
+    <h3><span id="name"><span></span id="wish"></span></h3>
+<button onclick="wishing()">get name</button>
+    <script>
+let msg = "happy birthday"
+document.getElementById("cake").innerHTML=msg.slice(0)
+
+    function wishing(){
+        let wish= "many Many happy returns of the day";
+        let n = prompt("What is your name?")
+        document.getElementById("name").innerHTML=n+ ":";
+        document.getElementById("wish").innerHTML=wish;
+    }
+   
+   
+   </script>
+
+</body>
+</html>
